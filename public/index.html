@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Davi Oliveira</title>
+  <meta name="description" content="Davi Oliveira, Software Engineer at Vonix.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#272822">
+  <meta property="og:title" content="Davi Oliveira">
+  <meta property="og:description" content="Software Engineer at Vonix.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/karla-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: "Karla";
+      src: url("/fonts/karla-latin.woff2") format("woff2");
+      font-weight: 200 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      /* Monokai */
+      --bg: #272822;
+      --text: #deded6;
+      --strong: #f8f8f2;
+      --muted: #99947e;
+      --accent: #fd971f;
+      --selection: #49483e;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Karla", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.8;
+      letter-spacing: -0.01em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    ::selection { background: var(--selection); }
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      min-height: 100dvh;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 5rem 1.25rem;
+    }
+
+    main { flex: 1; }
+
+    h1 {
+      margin: 0 0 1.5rem;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--strong);
+    }
+
+    .role {
+      margin-left: 0.5em;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    p { margin: 0 0 1rem; }
+
+    .secondary { color: var(--muted); }
+
+    .projects { margin-top: 4rem; }
+
+    .projects h2 {
+      margin: 0 0 0.75rem;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--muted);
+    }
+
+    .projects ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .projects li + li { margin-top: 0.5rem; }
+
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-color: color-mix(in oklab, var(--accent) 35%, transparent);
+      text-underline-offset: 3px;
+      transition: text-decoration-color 150ms ease, color 150ms ease;
+    }
+
+    a:hover { text-decoration-color: var(--accent); }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    footer {
+      margin-top: 6rem;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    footer ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    footer li + li::before {
+      content: "·";
+      margin: 0 0.6em;
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration-color: transparent;
+    }
+
+    footer a:hover {
+      color: var(--accent);
+      text-decoration-color: currentColor;
+    }
+
+    @media (max-width: 640px) {
+      .page { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      a { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <main>
+      <h1>Davi Oliveira<span class="role">Software Engineer</span></h1>
+      <p>
+        I work at <a href="https://vonix.com.br" target="_blank" rel="noopener">Vonix</a>,
+        building <a href="https://vonix.com.br/produto/" target="_blank" rel="noopener">VonixCC</a>, a multichannel customer service platform for voice, chat and
+        email.
+      </p>
+      <p>
+        I'm interested in software architecture and cloud, and I mostly write Go and
+        Node.js for a living. I also contribute to
+        <a href="https://github.com/davicbtoliveira" target="_blank" rel="noopener">open source</a>.
+      </p>
+      <p class="secondary">Based in <a href="https://maps.apple.com/search?query=Campo%20Grande%2C%20MS%2C%20Brazil" target="_blank" rel="noopener">Brazil</a>.</p>
+
+      <section class="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Open source</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/davicbtoliveira/spotui" target="_blank" rel="noopener">spotui</a>
+            <span class="secondary">· zero-config Spotify client for the terminal</span>
+          </li>
+          <li>
+            <a href="https://github.com/goreleaser/goreleaser" target="_blank" rel="noopener">GoReleaser</a>
+            <span class="secondary">· release automation for Go projects</span>
+          </li>
+          <li>
+            <a href="https://github.com/he4rt/heartdevs.com" target="_blank" rel="noopener">HeartDevs</a>
+            <span class="secondary">· platform for a Brazilian developer community</span>
+          </li>
+          <li>
+            <a href="https://github.com/projectbluefin" target="_blank" rel="noopener">Bluefin</a>
+            <span class="secondary">· Fedora-based Linux desktop</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/dcbto/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/davicbtoliveira" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="mailto:davicbtoliveira@gmail.com">Email</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
